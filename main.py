@@ -31,8 +31,6 @@ n_array = [50,100,150,200,250,300,350,400,450,500]    # number of input
 actual_running_time = [0 for num in range(len(n_array))]  # actual running time
 
 for iter, n in enumerate(n_array):
-    n_running_time_sum = 0.0     # 한 n값에 대해 10번 새로 수행하는 데에 걸린 시간을 더함
-    for n_iter in range(10): # 하나의 n당 10번씩 실행 (running time의 평균을 내기위함)
 
         # random sequence 생성
         X = random_input(n)
@@ -53,10 +51,8 @@ for iter, n in enumerate(n_array):
         end = time.time()-start # 실행 시간 측정
 
 
-        n_running_time_sum += end   # 한 n에서의 수행 시간을 더함
         print("Length of LCS : ", c[n][n])  # LCS의 길이 출력
-
-    actual_running_time[iter] = n_running_time_sum/10   # 한 n에서의 수행 시간의 평균을 저장
+        actual_running_time[iter] = end  # 한 n에서의 수행 시간의 평균을 저장
 
 
 for iter, n in enumerate(n_array):  # average actual running time 출력
