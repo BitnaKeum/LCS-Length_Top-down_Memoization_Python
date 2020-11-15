@@ -1,16 +1,19 @@
 # LCS-Length_Top-down_Memoization_Python
 
 
-random sequence X, Y (only Uppercase)
+random sequence X, Y (only Uppercase)<br>
 
+length of X,Y : n<br>
 
-length of X,Y : n
-
-
-running time : O(n^2)
-
+running time : O(n^2)<br>
+<br><br><br>
 
 
 
-<h3>Result</h2>
-![image](https://user-images.githubusercontent.com/37769713/99191391-c9015580-27af-11eb-9553-546d39421d91.png)
+<h3>Result</h3>
+
+![image](https://user-images.githubusercontent.com/37769713/99191584-d703a600-27b0-11eb-9122-e98299f44745.png)
+
+![image](https://user-images.githubusercontent.com/37769713/99191595-f39fde00-27b0-11eb-87c1-d927440cd622.png)
+
+<br>
